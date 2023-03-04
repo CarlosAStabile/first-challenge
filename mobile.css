@@ -19,6 +19,7 @@ body {
     font-family: 'Poppins', sans-serif;
     width: 700px;
     height: 800px;
+    background-image: linear-gradient(45deg, var(--backcolor-1), var(--backcolor-2), var(--backcolor-3));
 }
 /*Proyecto propiamente dicho*/
 
@@ -30,6 +31,7 @@ body {
     height: 650px;
     margin: 50px auto;
     padding: 25px 0;
+    background: white;
     /* border: 2px solid var(--othercolor-3); */
     border-radius: 8px;
     box-shadow: inset 0px -1px 16px 1px var(--othercolor-3);
@@ -47,29 +49,29 @@ body {
     position: relative;
     display: inline-block;
     width: 100%;
-    height: 250px;
+    height: 198px;
     background-image: url('./imgs/photo-300-200-2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-bottom: 4px solid var(--backcolor-3);
+    border-bottom: 5px solid var(--backcolor-3);
 }
 .header-ppal__avatar {
     position: absolute;
-    top: 110px;
+    top: 138px;
     left: 285px;
     width: 128px;
     height: 128px;
     background: var(--backcolor-4);
-    border: 4px solid var(--backcolor-3);
+    border: 5px solid var(--backcolor-3);
     border-radius: 50%;
 }
 .main-ppal {
     width: 450px;
-    height: 315px;
+    height: 350px;
     /* background-color: var(--othercolor-3); */
-    margin-top: 80px;
-    margin-bottom: 25px;
+    /* margin-top: 80px; */
+    /* margin-bottom: 25px; */
 }
 .main-ppal__title {
     display: flex;
@@ -81,7 +83,8 @@ body {
     justify-content: center;
     align-items: center;
     gap: 5px;
-    margin-bottom: 15px;
+    padding-top: 4px;
+    /* margin-bottom: 15px; */
 }
 .logo {
     background-image: url('./icons/map-pin-512-512.png');
@@ -100,6 +103,7 @@ body {
     width: 420px;
     height: 135px;
     margin: 0 auto;
+    padding-top: 4px;
 }
 .main-ppal__abbr {
     display: inline-block;
@@ -122,7 +126,7 @@ body {
     display: inline-block;
     width: 100px;
     height: 40px;
-    margin-top: 40px;
+    margin-top: 80px;
     margin-left: 170px;
     background: none;
     color: var(--othercolor-2);
@@ -132,15 +136,39 @@ body {
 .footer-ppal {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
     width: 450px;
-    height: 135px;
-    border-top: 1px solid var(--othercolor-3);
+    height: 100px;
+    border-top: 2px solid var(--othercolor-3);
+    opacity: 55%;
 }
 .footer-ppal__item {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    width: 150px;
+    height: 90px;
+}
+.footer-middle__item::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 150px;
+    height: 82px;
+    border-left: 2px solid var(--othercolor-3);
+    opacity: 55%;
+    transform: translateY(-4px);
+}
+.footer-middle__item::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 150px;
+    height: 82px;
+    border-right: 2px solid var(--othercolor-3);
+    opacity: 55%;
+    transform: translateY(-4px);
 }
 .footer-ppal__title {
     font-size: var(--sm-text);
@@ -150,29 +178,33 @@ body {
     display: flex;
     justify-content: center;
     gap: 10px;
-    background: var(--backcolor-3);
+    /* background: var(--backcolor-3); */
 }
 .footer-icon__one {
     background-image: url('./icons/note-pencil-512-512.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 32px;
-    height: 32px;
+    width: 22px;
+    height: 22px;
 }
 .footer-icon__two {
     background-image: url('./icons/users-followers-512-512.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 32px;
-    height: 32px;
+    width: 22px;
+    height: 22px;
 }
 .footer-icon__three {
     background-image: url('./icons/list-following-512-512.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 32px;
-    height: 32px;
+    width: 22px;
+    height: 22px;
+}
+.footer__p {
+    color: black;
+    opacity: 100%;
 }
